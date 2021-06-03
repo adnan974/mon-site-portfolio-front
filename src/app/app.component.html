@@ -1,15 +1,25 @@
-<mat-toolbar color="primary" class="navbar"> 
-  <span>Icone ?</span>
+<mat-toolbar color="primary" class="navbar">
+  <button mat-icon-button >
+    <mat-icon >home</mat-icon>
+  </button>
   <div>
     <span>
-      Accueil
+      <a mat-button>
+        Accueil
+      </a>
     </span>
     <span button>
-      CV
+      <a mat-button>
+        CV
+      </a>
     </span>
-    <span >
-      Projets réalisés
-    </span >
+    <span>
+      <a mat-button>
+        Projets réalisés
+      </a>
+    </span>
   </div>
 </mat-toolbar>
+
+
 <router-outlet></router-outlet>
