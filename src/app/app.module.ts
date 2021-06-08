@@ -9,10 +9,14 @@ import {MatButtonModule} from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { VerticalTimelineComponent } from './shared/components/vertical-timeline/vertical-timeline.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    VerticalTimelineComponent,
+    
     
     
   ],
@@ -25,6 +29,7 @@ import { MatListModule } from '@angular/material/list';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule
+    
   
   ],
   providers: [],
