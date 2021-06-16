@@ -5,20 +5,17 @@ import { HomeRoutingModule } from './home-routing.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { VerticalTimelineModule } from 'angular-vertical-timeline';
 import {MatDividerModule} from '@angular/material/divider';
 import { ProjectComponent } from '../project/pages/project.component'; 
-import { VerticalTimelineContainerComponent } from 'src/app/shared/components/vertical-timeline/vertical-timeline-container/vertical-timeline-container.component';
-import { VerticalTimelineContentComponent } from 'src/app/shared/components/vertical-timeline/vertical-timeline-content/vertical-timeline-content.component';
+import { VerticalTimelineComponent } from 'src/app/shared/components/vertical-timeline/vertical-timeline.component';
+import { SharedModuleModule } from 'src/app/shared/shared-module.module';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
-    ProjectComponent,
-    VerticalTimelineContainerComponent,
-    VerticalTimelineContentComponent
+    HomeComponent
+    
     ],
   imports: [
     CommonModule,
@@ -26,8 +23,9 @@ import { VerticalTimelineContentComponent } from 'src/app/shared/components/vert
     FlexLayoutModule,
     MatButtonModule,
     MatIconModule,
-    VerticalTimelineModule,
     MatDividerModule,
+    SharedModuleModule
+    
     
     
   ]

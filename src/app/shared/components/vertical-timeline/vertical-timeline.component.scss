@@ -8,14 +8,36 @@ ul {
     list-style: none;
 }
 
-ul li {
+.timeline-container {
+    font-family: "Courier New", Courier, monospace;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.timeline {
+    width: 80%;
+    height: auto;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+}
+
+
+.timeline ul {
+    list-style: none;
+}
+
+.timeline ul li {
     background-color: ghostwhite;
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 
-ul li:last-child {
+.timeline ul li:last-child {
     margin-bottom: 0;
 }
 
@@ -39,24 +61,35 @@ ul li:last-child {
 }
 
 @media only screen and (min-width: 768px) {
-    ul li {
+    .timeline:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 2px;
+        height: 100%;
+        background-color: gray;
+    }
+    
+    .timeline ul li {
         width: 50%;
         position: relative;
         margin-bottom: 50px;
     }
-    ul li:nth-child(odd) {
+    .timeline ul li:nth-child(odd) {
         float: left;
         clear: right;
         transform: translateX(-30px);
         border-radius: 20px 0px 20px 20px;
     }
-    ul li:nth-child(even) {
+    .timeline ul li:nth-child(even) {
         float: right;
         clear: left;
         transform: translateX(30px);
         border-radius: 0px 20px 20px 20px;
     }
-    ul li::before {
+    .timeline ul li::before {
         content: "";
         position: absolute;
         height: 20px;
@@ -65,11 +98,11 @@ ul li:last-child {
         background-color: gray;
         top: 0px;
     }
-    ul li:nth-child(odd)::before {
+    .timeline ul li:nth-child(odd)::before {
         transform: translate(50%, -50%);
         right: -30px;
     }
-    ul li:nth-child(even)::before {
+    .timeline ul li:nth-child(even)::before {
         transform: translate(-50%, -50%);
         left: -30px;
     }
@@ -77,7 +110,8 @@ ul li:last-child {
         position: absolute;
         top: -30px;
     }
-    ul li:hover::before {
+    .timeline ul li:hover::before {
         background-color: aqua;
     }
+    
 }
