@@ -2,10 +2,7 @@
 
 #home-presentation-title{
     font-size: 24px;
-   // font-family: 'Montserrat', sans-serif;
     font-weight: 900;
-    font-family: 'Courier New', Courier, monospace;
-
 }
 
 #home-presentation-image{
@@ -15,7 +12,7 @@
 }
 
 #home-first-container{
-    background-color:rgb(250, 250, 255);
+    background-color: white;
     margin: 0 0 0px 0px;
     padding: 50px 0 20px 0;
 }
@@ -25,7 +22,9 @@ a {
 }
 
 .home-presentation-paragraph{
-    font-family: 'Courier New', Courier, monospace;
+    color: rgb(68, 68, 68);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .other-home-title{
@@ -33,7 +32,6 @@ a {
     font-size: 28px;
     font-weight: 450;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
 
 
 }
@@ -41,4 +39,9 @@ a {
 .home-presentation-divider{
     margin: 0 auto;
     width: 50%;
+}
+
+#home-content{
+    border-top: 2px solid #eaeaea ;
+    background-color: #fafafa ;
 }
