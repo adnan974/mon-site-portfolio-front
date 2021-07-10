@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CvService } from 'src/app/core/services/cv.service';
 
 @Component({
   selector: 'app-cv',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CvComponent implements OnInit {
 
+  public cvData!:Array<any>;
+
   constructor() { }
 
   ngOnInit(): void {
+   
+  
   }
 
 }

@@ -30,7 +30,7 @@ ul {
 }
 
 .timeline ul li {
-    background-color: ghostwhite;
+    background-color: rgb(214, 214, 214);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -112,7 +112,7 @@ ul {
         top: -30px;
     }
     .timeline ul li:hover::before {
-        background-color: aqua;
+        background-color: rgb(36, 20, 182);
     }
     
 }

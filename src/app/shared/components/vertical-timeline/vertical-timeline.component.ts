@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CvService } from 'src/app/core/services/cv.service';
 import { TimelineContent } from '../../models/timeline-content';
 
 @Component({
@@ -10,9 +11,15 @@ export class VerticalTimelineComponent implements OnInit {
 
   public timeline_content: Array<TimelineContent> = []
 
-  constructor() { }
+  public cvData!:Array<any>;
+
+  constructor(private cvService:CvService) { }
 
   ngOnInit(): void {
+    this.cvService.getCvData().subscribe((cvData)=>{
+      this.cvData = cvData;
+      console.log(this.cvData)
+    })
     this.timeline_content.push(new TimelineContent("heading 1","corps 1"));
   }
 

@@ -1,25 +1,15 @@
 <h1 class="other-home-title">Projets</h1>
 
-<div fxLayout="row" >
-    <mat-card >
-        <mat-card-title>Jeu du serpent (Snake)</mat-card-title>
-        <mat-card-content>Description: Ce projet a été réalisé en javascript</mat-card-content>
-        <mat-card-footer>
+<div fxLayout="row">
+    <mat-card *ngFor='let project of projectsData'>
+        <mat-card-title> {{project.title}}</mat-card-title>
+        <mat-card-content>{{project.description}}</mat-card-content>
             <mat-card-actions>
-                <button mat-button color="primary">Lancer le projet en live</button>
+                <a mat-button color="primary" target="​_blank" [href]="project.presentationLink">Lancer le projet en live</a>
             </mat-card-actions>
-        </mat-card-footer>
-    </mat-card>
-    
-    <mat-card >
-        <mat-card-title>Application Web de gestion de projet</mat-card-title>
-        <mat-card-content>Description: </mat-card-content>
-        <mat-card-footer>
             <mat-card-actions>
-                <button mat-button color="primary">Acceder au projet</button>
+                <a mat-button color="primary" target="​_blank" [href]="project.repositoryLink">Repository</a>
             </mat-card-actions>
-        </mat-card-footer>
     </mat-card>
 </div>
-
 

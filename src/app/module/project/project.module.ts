@@ -6,6 +6,8 @@ import { ProjectRoutingModule } from './project-routing.module';
 import { ProjectComponent } from './pages/project.component';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ProjectService } from 'src/app/core/services/project.service';
+import {  HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -15,7 +17,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatButtonModule,
     CommonModule,
     ProjectRoutingModule,
-    FlexLayoutModule
-  ]
+    FlexLayoutModule,
+    HttpClientModule
+  ],
+  providers:[ProjectService]
 })
 export class ProjectModule { }

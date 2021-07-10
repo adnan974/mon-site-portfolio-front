@@ -1,8 +1,28 @@
 
+#home-first-container{
+    background-color: white;
+    margin: 0 0 0px 0px;
 
-#home-presentation-title{
-    font-size: 24px;
-    font-weight: 900;
+    height: calc(100% - 64px);
+}
+
+
+.home-presentation-title{
+    font-size: 56px ;
+    font-weight: 600;
+    color:#212529;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+    line-height: 60px;
+
+    
+}
+
+.home-presentation-subtitle{
+    font-size: 20px ;
+    color:gray;
+
 }
 
 #home-presentation-image{
@@ -11,11 +31,7 @@
     width: auto\9; /* ie8 */
 }
 
-#home-first-container{
-    background-color: white;
-    margin: 0 0 0px 0px;
-    padding: 50px 0 20px 0;
-}
+
 
 a {
     color: inherit;

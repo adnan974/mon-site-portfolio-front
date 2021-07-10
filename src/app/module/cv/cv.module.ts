@@ -5,7 +5,9 @@ import { CvRoutingModule } from './cv-routing.module';
 import { CvComponent } from './pages/cv.component';
 import { VerticalTimelineComponent } from 'src/app/shared/components/vertical-timeline/vertical-timeline.component';
 import { SharedModuleModule } from 'src/app/shared/shared-module.module';
-
+import { CvService } from 'src/app/core/services/cv.service';
+import { HttpClientModule } from '@angular/common/http';
+import {MatDividerModule} from '@angular/material/divider'; 
 
 @NgModule({
   declarations: [
@@ -15,7 +17,10 @@ import { SharedModuleModule } from 'src/app/shared/shared-module.module';
   imports: [
     CommonModule,
     CvRoutingModule,
-    SharedModuleModule
-  ]
+    SharedModuleModule,
+    MatDividerModule
+    
+  ],
+  providers:[]
 })
 export class CvModule { }
