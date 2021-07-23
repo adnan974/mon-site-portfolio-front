@@ -1,4 +1,24 @@
-.mat-card{
-    width: 50%;
-    margin: 0 20px 0 20px;
+
+.mat-divider{
+    border-top-color:rgb(58, 57, 57);
+    margin: auto;
+    width: 100px;
+    border-top-width: 3px;
+}
+
+#project-title-container{
+    margin: 10% 0 70px 0;
+  
+}
+
+#project-title{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 600;
+    color: rgb(34, 33, 33);
+    
+}
+
+.content{
+    padding: 25px;
 }

@@ -1,15 +1,22 @@
-<h1 class="other-home-title">Projets</h1>
+<div id="project-title-container">
+    <h1 id="project-title">Projets</h1>
+    <mat-divider></mat-divider>
 
-<div fxLayout="row">
-    <mat-card *ngFor='let project of projectsData'>
-        <mat-card-title> {{project.title}}</mat-card-title>
-        <mat-card-content>{{project.description}}</mat-card-content>
-            <mat-card-actions>
-                <a mat-button color="primary" target="​_blank" [href]="project.presentationLink">Lancer le projet en live</a>
-            </mat-card-actions>
-            <mat-card-actions>
-                <a mat-button color="primary" target="​_blank" [href]="project.repositoryLink">Repository</a>
-            </mat-card-actions>
-    </mat-card>
+</div>
+
+<div class="content" fxLayout="row wrap" fxLayoutGap="16px grid" >
+    <div fxFlex="50%" *ngFor='let project of projectsData'>
+        <mat-card class="mat-elevation-z4"  >
+            <mat-card-title> {{project.title}}</mat-card-title>
+            <mat-card-content>{{project.description}}</mat-card-content>
+                <mat-card-actions>
+                    <a mat-button color="primary" target="​_blank" [href]="project.presentationLink">Lancer le projet en live</a>
+                </mat-card-actions>
+                <mat-card-actions>
+                    <a mat-button color="primary" target="​_blank" [href]="project.repositoryLink">Repository</a>
+                </mat-card-actions>
+        </mat-card>
+    </div>
+    
 </div>
 

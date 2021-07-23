@@ -8,11 +8,13 @@ import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProjectService } from 'src/app/core/services/project.service';
 import {  HttpClientModule } from '@angular/common/http';
+import { MatDividerModule } from '@angular/material/divider';
 
 
 @NgModule({
   declarations: [ProjectComponent],
   imports: [
+    MatDividerModule,
     MatCardModule,
     MatButtonModule,
     CommonModule,

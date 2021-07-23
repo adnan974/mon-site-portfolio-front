@@ -18,7 +18,8 @@ const routes: Routes = [
     path:'cv',
     loadChildren: ()=> import('./module/cv/cv.module').then(module=>module.CvModule)
 
-  }
+  },
+  
 ];
 
 @NgModule({
