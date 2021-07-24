@@ -18,7 +18,6 @@ export class VerticalTimelineComponent implements OnInit {
   ngOnInit(): void {
     this.cvService.getCvData().subscribe((cvData)=>{
       this.cvData = cvData;
-      console.log(this.cvData)
     })
     this.timeline_content.push(new TimelineContent("heading 1","corps 1"));
   }
