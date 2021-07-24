@@ -10,7 +10,7 @@ function requireHTTPS(req, res, next) {
     next();
 }
 
-//app.use(requireHTTPS);
+app.use(requireHTTPS);
 app.use(express.static(`./dist/mon-site-web-portfolio` ));
 
 app.get('/*', function(req, res) {
@@ -18,6 +18,6 @@ app.get('/*', function(req, res) {
   );
 });
 
-app.listen(process.env.PORT || 8081,()=>{
+app.listen(process.env.PORT || 8080,()=>{
     console.log("server is listening...")
 });
