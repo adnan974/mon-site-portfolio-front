@@ -1,10 +1,9 @@
-
-
 #home-first-container{
     background-color: white;
     margin: 0 0 0px 0px;
     
-    height: calc(100% - 64px);
+    height: calc(100vh - 64px);
+    //height: 100vh;
 }
 
 
@@ -16,9 +15,9 @@
     text-align: center;
     margin-bottom: 15px;
     line-height: 55px;
-
-    
+ 
 }
+
 
 .home-presentation-subtitle{
     font-size: 20px ;
@@ -64,4 +63,14 @@ a {
 #home-content{
     border-top: 1px solid #eaeaea ;
     background-color: #fafafa ;
+}
+
+@media  (max-width: 320px)   {
+    
+    .home-presentation-title{
+        font-size: 36px ;
+        line-height: 40px;
+
+    }
+
 }

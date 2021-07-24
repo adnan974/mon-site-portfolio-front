@@ -9,6 +9,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import { ProjectComponent } from '../project/pages/project.component'; 
 import { VerticalTimelineComponent } from 'src/app/shared/components/vertical-timeline/vertical-timeline.component';
 import { SharedModuleModule } from 'src/app/shared/shared-module.module';
+import { ProjectModule } from '../project/project.module';
 
 
 
@@ -25,9 +26,8 @@ import { SharedModuleModule } from 'src/app/shared/shared-module.module';
     MatIconModule,
     MatDividerModule,
     SharedModuleModule
-    
-    
-    
+        
+
   ]
 })
 export class HomeModule { }

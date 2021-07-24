@@ -1,11 +1,21 @@
 <div >
   <mat-toolbar color="primary" class="navbar">
-    <button mat-icon-button>
-      <mat-icon class="navbar-menu">home</mat-icon>
+
+
+    <!-- <div fxShow="true" fxHide.gt-sm="true">
+      <a href="#" (click)="sidenav.toggle()">Show Side Menu</a>
+    </div> -->
+    <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+      <mat-icon>menu</mat-icon>
     </button>
 
     <div fxShow="true" fxHide.lt-md="true">
-      <!-- The following menu items will be hidden on both SM and XS screen sizes -->
+      <button mat-icon-button routerLink="/">
+        <mat-icon class="navbar-menu">home</mat-icon>
+      </button>
+    </div>
+
+    <div fxShow="true" fxHide.lt-md="true">
       <div>
         <span>
           <a class="navbar-menu" mat-button routerLink="/">
@@ -25,26 +35,41 @@
       </div>
     </div>
 
-    <div fxShow="true" fxHide.gt-sm="true">
-      <a href="#" (click)="sidenav.toggle()">Show Side Menu</a>
-    </div>
+
+
   </mat-toolbar>
 
-  <mat-sidenav-container  fxFlexFill class="example-container">
+  <mat-sidenav-container fxFlexFill class="example-container">
     <mat-sidenav #sidenav fxLayout="column">
       <div fxLayout="column">
-        <a (click)="sidenav.toggle()" href="#" mat-button>Close</a>
-        <a href="#" mat-button>Menu Item 1</a>
-        <a href="#" mat-button>Menu Item 2</a>
-        <a href="#" mat-button>Menu Item 3</a>
-        <a href="#" mat-button>Menu Item 4</a>
-        <a href="#" mat-button>Menu Item 5</a>
-        <a href="#" mat-button>Menu Item 6</a>
+
+        <span>
+          <a class="navbar-menu" mat-button routerLink="/">
+            Accueil
+          </a>
+        </span>
+        <span button>
+          <a class="navbar-menu" class="navbar-menu" mat-button routerLink="/cv">
+            CV
+          </a>
+        </span>
+        <span>
+          <a class="navbar-menu" mat-button routerLink="/project">
+            Projets réalisés
+          </a>
+        </span>
+       
       </div>
     </mat-sidenav>
-    <mat-sidenav-content >
+    <mat-sidenav-content>
       <router-outlet></router-outlet>
-
+      <mat-divider></mat-divider>
+      <footer>
+        <div>
+          <p id="copyright-element">Copyright © 2021 ·</p>
+          <p>Ce site à été realisé avec Angular</p>
+        </div>
+      </footer>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
