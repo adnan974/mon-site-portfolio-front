@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { CvService } from 'src/app/core/services/cv.service';
 import { TimelineContent } from '../../models/timeline-content';
 
@@ -13,11 +13,14 @@ export class VerticalTimelineComponent implements OnInit {
 
   public cvData!:Array<any>;
 
+  @Output() isDataLoaded = new EventEmitter<boolean>();
+
   constructor(private cvService:CvService) { }
 
   ngOnInit(): void {
     this.cvService.getCvData().subscribe((cvData)=>{
       this.cvData = cvData;
+      this.isDataLoaded.emit(true);
     })
     this.timeline_content.push(new TimelineContent("heading 1","corps 1"));
   }

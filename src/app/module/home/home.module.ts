@@ -6,11 +6,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
-import { ProjectComponent } from '../project/pages/project.component'; 
-import { VerticalTimelineComponent } from 'src/app/shared/components/vertical-timeline/vertical-timeline.component';
 import { SharedModuleModule } from 'src/app/shared/shared-module.module';
-import { ProjectModule } from '../project/project.module';
-
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'; 
 
 
 @NgModule({
@@ -25,8 +22,8 @@ import { ProjectModule } from '../project/project.module';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
-    SharedModuleModule
-        
+    SharedModuleModule,
+    MatProgressSpinnerModule        
 
   ]
 })

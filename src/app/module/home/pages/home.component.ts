@@ -6,10 +6,13 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent implements OnInit {  
+export class HomeComponent  {  
   constructor() { }
 
-  ngOnInit(): void {
+  public isLoading!:boolean;
+
+  setLoading(state:boolean){
+    this.isLoading = state;
   }
 
 }

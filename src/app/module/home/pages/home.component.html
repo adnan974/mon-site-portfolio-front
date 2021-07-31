@@ -1,7 +1,5 @@
 <div id="home-first-container" fxLayout="column" fxLayoutAlign="center center">
-    <!-- <div fxFlexOffset="5" fxFlex="20" fxFlexAlign="center">
-        <img id="home-presentation-image" src="assets/profile-image.jpeg" /> 
-    </div> -->
+
     <div class="typewriter">
         <h2 class="home-presentation-title">
             Bonjour, <br />
@@ -10,27 +8,18 @@
         </h2>
     </div>
     <div class="home-presentation-subtitle">
-        <p>Sur ce site, vous retrouverez mon CV ainsi que mes projets,<br/> réalisés en tant que developpeur Web.</p>
+        <p>Sur ce site, vous retrouverez mon CV ainsi que mes projets,<br /> réalisés en tant que developpeur Web.</p>
     </div>
 </div>
-
-
-<!-- <div fxFlexOffset="5" fxFlexAlign="end" fxFlex="30" class="home-presentation-paragraph">
-        <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam doloremque, qui velit quaerat fuga
-
-            porro labore iusto odio debitis ratione libero, magnam optio fugit suscipit eaque maxime vel at?
-        </p>
-    </div> -->
-      
-      
 
 <div id="home-content">
 
     <div fxLayout="column">
         <h2 class="other-home-title">Curriculum Vitae</h2>
 
-        <vertical-timeline></vertical-timeline>
+        <mat-spinner *ngIf="!isLoading" ></mat-spinner>
+
+        <vertical-timeline (isDataLoaded)="setLoading($event)"></vertical-timeline>
 
         <div class="cv-download-container">
             <div fxFlexAlign="center">
@@ -40,9 +29,9 @@
                 </a>
             </div>
         </div>
-       
+
     </div>
 
-  
 
-</div> 
+
+</div>
