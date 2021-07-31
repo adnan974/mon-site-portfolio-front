@@ -9,7 +9,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProjectService } from 'src/app/core/services/project.service';
 import {  HttpClientModule } from '@angular/common/http';
 import { MatDividerModule } from '@angular/material/divider';
-
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [ProjectComponent],
@@ -20,7 +20,8 @@ import { MatDividerModule } from '@angular/material/divider';
     CommonModule,
     ProjectRoutingModule,
     FlexLayoutModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers:[ProjectService]
 })

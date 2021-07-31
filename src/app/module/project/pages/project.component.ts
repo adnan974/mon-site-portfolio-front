@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProjectService } from 'src/app/core/services/project.service';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
+
 
 @Component({
   selector: 'app-project',
@@ -8,6 +11,9 @@ import { ProjectService } from 'src/app/core/services/project.service';
 })
 export class ProjectComponent implements OnInit {
 
+  public faGithub = faGithub;
+  public faRocket = faRocket;
+  
   public projectsData!:any;
 
   constructor(private projectService:ProjectService) { }

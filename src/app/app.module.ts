@@ -10,6 +10,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatSnackBarModule} from '@angular/material/snack-bar'; 
 
 
 @NgModule({
@@ -25,7 +26,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatButtonModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatSnackBarModule
+    
     
   
   ],
