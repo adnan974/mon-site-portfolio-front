@@ -2,8 +2,21 @@
 
 .navbar {
     justify-content: space-between;
-    //background-color: white;
+    
 }
+
+.mat-toolbar{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 10;
+}
+
+.mat-sidenav{
+    margin-top: 56px;
+    position: fixed;
+}
+
 
 
 

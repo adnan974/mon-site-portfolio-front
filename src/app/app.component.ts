@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faFileAlt } from '@fortawesome/free-solid-svg-icons';
+import { faRocket } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +11,13 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class AppComponent implements OnInit{
 
+  public icons = {
+    faHome:faHome,
+    faFileAlt:faFileAlt,
+    faRocket:faRocket
+  }
+  public faFileAlt = faFileAlt;
+  public faHome = faHome;
   public title = 'mon-site-web-portfolio';
   
 
@@ -16,5 +26,9 @@ export class AppComponent implements OnInit{
   ngOnInit(){
     //TODO
     this._snackBar.open("Attention: Le site est en cours de construction. Mais les parties CV et Projet sont fonctionnelles !", "ok");
+  }
+
+  scrollToElement(element:any){
+
   }
 }

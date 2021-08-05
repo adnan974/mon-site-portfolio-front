@@ -1,4 +1,4 @@
-<div >
+<div>
   <mat-toolbar color="primary" class="navbar">
 
 
@@ -10,7 +10,7 @@
     </button>
 
     <div fxShow="true" fxHide.lt-md="true">
-      <button mat-icon-button routerLink="/">
+      <button mat-icon-button routerLink="/" fragment="homeSection">
         <mat-icon class="navbar-menu">home</mat-icon>
       </button>
     </div>
@@ -18,17 +18,19 @@
     <div fxShow="true" fxHide.lt-md="true">
       <div>
         <span>
-          <a class="navbar-menu" mat-button routerLink="/">
+          <a class="navbar-menu" mat-button routerLink="/" fragment="homeSection">
             Accueil
           </a>
         </span>
         <span button>
-          <a class="navbar-menu" class="navbar-menu" mat-button routerLink="/cv">
+          <!-- <a class="navbar-menu" class="navbar-menu" mat-button routerLink="/cv">
             CV
-          </a>
+          </a> -->
+          <a class="navbar-menu" mat-button  routerLink="/" fragment="cvSection" >CV</a>
+
         </span>
         <span>
-          <a class="navbar-menu" mat-button routerLink="/project">
+          <a class="navbar-menu" mat-button routerLink="/" fragment="projectSection" >
             Projets réalisés
           </a>
         </span>
@@ -40,25 +42,32 @@
   </mat-toolbar>
 
   <mat-sidenav-container fxFlexFill class="example-container">
-    <mat-sidenav #sidenav fxLayout="column">
+    <mat-sidenav  #sidenav fxLayout="column" layout-align="start">
       <div fxLayout="column">
 
         <span>
-          <a class="navbar-menu" mat-button routerLink="/">
+          <a class="navbar-menu" mat-button routerLink="/" fragment="homeSection">
+            <fa-icon [icon]="icons.faHome"></fa-icon>
             Accueil
           </a>
         </span>
         <span button>
-          <a class="navbar-menu" class="navbar-menu" mat-button routerLink="/cv">
+          <a class="navbar-menu" class="navbar-menu" mat-button routerLink="/" fragment="cvSection" >
+            <fa-icon [icon]="icons.faFileAlt"></fa-icon>
+
             CV
           </a>
         </span>
         <span>
-          <a class="navbar-menu" mat-button routerLink="/project">
+
+          <a class="navbar-menu" mat-button routerLink="/" fragment="projectSection" >
+            <fa-icon [icon]="icons.faRocket"></fa-icon>
+
             Projets réalisés
           </a>
+
         </span>
-       
+
       </div>
     </mat-sidenav>
     <mat-sidenav-content>
@@ -73,4 +82,3 @@
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
-

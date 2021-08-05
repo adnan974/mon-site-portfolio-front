@@ -3,17 +3,23 @@ import { CommonModule } from '@angular/common';
 import { VerticalTimelineComponent } from './components/vertical-timeline/vertical-timeline.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CvService } from '../core/services/cv.service';
+import { SkillsBarComponent } from './components/skills-bar/skills-bar.component';
+import { MatCardModule } from '@angular/material/card';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 
 
 @NgModule({
-  declarations: [VerticalTimelineComponent],
+  declarations: [VerticalTimelineComponent, SkillsBarComponent],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCardModule,
+    MatProgressBarModule
   ],
   exports:[
-    VerticalTimelineComponent
+    VerticalTimelineComponent,
+    SkillsBarComponent
   ],
   providers:[CvService]
 })

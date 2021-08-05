@@ -1,14 +1,67 @@
-<div class="container">
+<div class="cv-page-container">
     <div id="cv-title-container">
         <h1 id="cv-title">Curriculum Vitae</h1>
         <mat-divider></mat-divider>
     </div>
-    
-    
-    <div class="vertical-timeline">
-        <vertical-timeline></vertical-timeline>
-    
+
+
+
+    <mat-card class="mat-card-profile"> 
+        <div class="profile-container">
+            <div class="profile-item">
+                <img class="profile-img" src="../../../../assets/profile-image.jpeg" alt="" />
+            </div>
+            <div class="profile-item">
+                <p>
+                    Passioné par le developpement, je suis dans le monde de l'informatique depuis mon adolescence. <br>
+                    J'ai 2ans d'expérience professionnelle en tant que developpeur web. J'ai pu y concevoir et réaliser
+                    une application web ainsi que des webservices.
+                    Cette expérience m'a appris le travail d'équipe, l'organisaton et la discipline. <br>
+                    Je suis actuelement diplomé d'un BAC +4 en tant que concepteur et developpeur d'application.
+                </p>
+            </div>
+        </div>
+    </mat-card>
+
+    <div class="container-skills-bar">
+        <div class="app-skills-bar">
+            <app-skills-bar [skillData]="skillData.frontSkills"></app-skills-bar>
+        </div>
+
+        <div class="app-skills-bar">
+            <app-skills-bar [skillData]="skillData.backSkills"></app-skills-bar>
+        </div>
     </div>
 
-</div>
 
+    <mat-card class="professional-experience-container">
+        <mat-card-title>Expérience professionnelle</mat-card-title>
+        <mat-card-subtitle>Developpeur Web chez SAAS PARTNER | 2019-2021</mat-card-subtitle>
+        <mat-card-content>
+            <p>Création d'une application web complète pour la gestion d'une agence de voyage et réalisation d'un
+                webservice.<br>
+                Dans ce projet j'ai participé à: <br></p>
+            <ul>
+                <li>La conception de la base de données </li>
+                <li>La réalisation d'un backend</li>
+                <li>La réalisation d'un frontend</li>
+                <li>La réalisation de tests unitaires en respectant les principes de la TDD/BDD </li>
+                <li>Création d'un webservice en respectant l'architecture REST</li>
+                <li>Déploiement sur un serveur dédiée et administration avec IIS</li>
+            </ul>
+        </mat-card-content>
+    </mat-card>
+
+
+    <mat-card class="mat-card-vertical-timeline">
+        <mat-card-title>Formations</mat-card-title>
+
+        <div class="vertical-timeline">
+            <vertical-timeline></vertical-timeline>
+
+        </div>
+    </mat-card>
+
+
+
+</div>

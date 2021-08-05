@@ -1,4 +1,6 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -6,13 +8,35 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 
-export class HomeComponent  {  
-  constructor() { }
+export class HomeComponent  implements OnInit{  
 
-  public isLoading!:boolean;
+  private fragment!: string;
 
-  setLoading(state:boolean){
-    this.isLoading = state;
+  constructor(
+    private scroller:ViewportScroller,
+    private route:ActivatedRoute,
+    private router:Router
+    ) { 
+      
+ 
+    }
+
+
+  ngOnInit() {
+    this.route.fragment.subscribe(fragment => {
+      this.fragment = fragment || "";
+      this.router.navigate(["/"])
+      this.scroller.scrollToAnchor(`${this.fragment}`);
+
+
+    });
   }
+
+  ngAfterViewInit(): void {
+
+  }
+
+
+  
 
 }

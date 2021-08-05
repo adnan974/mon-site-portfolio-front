@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 //@import "~angular-vertical-timeline/dist/vertical-timeline.css";
-
+html{
+    scroll-behavior: smooth;
+}
 html, body { height: 100%; }
 body { 
     margin: 0;

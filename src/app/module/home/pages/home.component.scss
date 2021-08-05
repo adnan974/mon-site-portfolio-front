@@ -1,11 +1,11 @@
-.mat-spinner{
-    margin: auto;
-}
+
 
 #home-first-container{
     background-color: white;
     margin: 0 0 0px 0px;
     height: calc(100vh - 64px);
+    background-image: url('../../../../assets/wallpaper-2-min.png');
+    background-size: cover;
     //height: 100vh;
 }
 
@@ -49,23 +49,20 @@ a {
     font-weight: 400;
 }
 
-.other-home-title{
-    margin-top: 20px;
-    font-size: 28px;
-    font-weight: 450;
-    text-align: center;
 
-
-}
 
 .home-presentation-divider{
     margin: 0 auto;
     width: 50%;
 }
 
-#home-content{
-    border-top: 1px solid #eaeaea ;
-    background-color: #fafafa ;
+.cv-page-container{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.project-page-container{
+    margin: 0 50px 50px 50px;
 }
 
 @media  (max-width: 320px)   {

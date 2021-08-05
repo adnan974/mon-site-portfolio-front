@@ -1,0 +1,15 @@
+<div class="skills-container">
+
+    <mat-card >
+        <div class="skills">
+            <div class="skills-item" *ngFor="let skill of skillData" >
+                <p>
+                    {{skill.name}}
+                </p>
+                <mat-progress-bar [value]="skill.pourcentageOfKnowledge"></mat-progress-bar>
+            </div>
+
+            
+        </div>
+    </mat-card>
+</div>

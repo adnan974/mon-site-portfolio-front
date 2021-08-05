@@ -8,16 +8,16 @@ const routes: Routes = [
     loadChildren: ()=> import('./module/home/home.module').then(module=>module.HomeModule)
 
   },
-  {
-    path:'project',
-    loadChildren: ()=> import('./module/project/project.module').then(module=>module.ProjectModule)
+  // {
+  //   path:'project',
+  //   loadChildren: ()=> import('./module/project/project.module').then(module=>module.ProjectModule)
 
-  },
-  {
-    path:'cv',
-    loadChildren: ()=> import('./module/cv/cv.module').then(module=>module.CvModule)
+  // },
+  // {
+  //   path:'cv',
+  //   loadChildren: ()=> import('./module/cv/cv.module').then(module=>module.CvModule)
 
-  },
+  // },
   
 ];
 

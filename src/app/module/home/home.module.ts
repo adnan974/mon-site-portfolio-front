@@ -8,6 +8,11 @@ import { MatIconModule } from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import { SharedModuleModule } from 'src/app/shared/shared-module.module';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner'; 
+import { CvModule } from '../cv/cv.module';
+import { ProjectModule } from '../project/project.module';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
+
 
 
 @NgModule({
@@ -23,7 +28,10 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
     MatIconModule,
     MatDividerModule,
     SharedModuleModule,
-    MatProgressSpinnerModule        
+    MatProgressSpinnerModule,
+    CvModule,
+    ProjectModule,
+    FontAwesomeModule
 
   ]
 })

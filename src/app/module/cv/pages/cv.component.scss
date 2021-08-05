@@ -1,27 +1,107 @@
-
-
-#cv-title-container{
-    margin: 10% 0 70px 0;
-  
+.professional-experience-container p {
+    font-size: 12pt;
 }
 
-#cv-title{
+.professional-experience-container ul {
+    font-size: 12pt;
+}
+
+.professional-experience-container{
+    margin-bottom: 50px;
+}
+
+
+//-- profile
+
+.mat-card-profile{
+    margin-bottom: 50px;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-item:last-child {
+    width: 50%;
+}
+
+.profile-item p {
+    font-size: 13pt;
+}
+
+.profile-img {
+    height: 180px;
+    border-radius: 50%;
+}
+
+// skills bar ----
+.container-skills-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 15px;
+}
+
+.app-skills-bar {
+    margin-bottom: 50px;
+    width: 50%;
+}
+
+//---------------
+
+
+#cv-title-container {
+    margin: 10% 0 70px 0;
+}
+
+#cv-title {
     text-align: center;
     font-size: 34px;
     font-weight: 600;
     color: rgb(34, 33, 33);
-    
 }
 
-.vertical-timeline{
+.vertical-timeline {
     margin-bottom: 40px;
 }
 
+.mat-card-vertical-timeline{
+    margin-bottom: 50px;
+}
 
-.mat-divider{
-    border-top-color:rgb(58, 57, 57);
+.mat-divider {
+    border-top-color: rgb(58, 57, 57);
     margin: auto;
     width: 100px;
     border-top-width: 3px;
 }
 
+@media only screen and (max-width: 768px) {
+    .container-skills-bar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .app-skills-bar {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    .profile-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-item:first-child{
+        margin-bottom: 25px;
+    }
+    .profile-item:last-child {
+        width: 100%;
+        text-align: center;
+
+    }
+}

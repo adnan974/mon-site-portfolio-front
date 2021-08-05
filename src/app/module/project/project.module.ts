@@ -23,6 +23,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HttpClientModule,
     FontAwesomeModule
   ],
-  providers:[ProjectService]
+  providers:[ProjectService],
+  exports:[ProjectComponent]
 })
 export class ProjectModule { }

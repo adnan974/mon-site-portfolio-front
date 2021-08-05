@@ -3,11 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { CvRoutingModule } from './cv-routing.module';
 import { CvComponent } from './pages/cv.component';
-import { VerticalTimelineComponent } from 'src/app/shared/components/vertical-timeline/vertical-timeline.component';
 import { SharedModuleModule } from 'src/app/shared/shared-module.module';
-import { CvService } from 'src/app/core/services/cv.service';
-import { HttpClientModule } from '@angular/common/http';
 import {MatDividerModule} from '@angular/material/divider'; 
+import {MatProgressBarModule} from '@angular/material/progress-bar'; 
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -18,9 +17,11 @@ import {MatDividerModule} from '@angular/material/divider';
     CommonModule,
     CvRoutingModule,
     SharedModuleModule,
-    MatDividerModule
+    MatDividerModule,
+    MatProgressBarModule,
+    MatCardModule
     
   ],
-  providers:[]
+  exports:[CvComponent]
 })
 export class CvModule { }
