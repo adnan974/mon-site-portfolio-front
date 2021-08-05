@@ -57,8 +57,20 @@ a {
 }
 
 .cv-page-container{
-    margin-right: 50px;
-    margin-left: 50px;
+    margin: 0 50px 0 50px;
+
+}
+
+.cv-download-container{
+    margin: 0 50px 0 50px;
+}
+
+.cv-download-container a{
+    display: block;
+    margin:auto;
+    text-align: center;
+    font-size: 13pt;
+
 }
 
 .project-page-container{

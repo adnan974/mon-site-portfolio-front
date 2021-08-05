@@ -11,6 +11,7 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import { CvModule } from '../cv/cv.module';
 import { ProjectModule } from '../project/project.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MatCardModule } from '@angular/material/card';
 
 
 
@@ -31,7 +32,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     MatProgressSpinnerModule,
     CvModule,
     ProjectModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MatCardModule
 
   ]
 })
