@@ -30,6 +30,7 @@
     "@fortawesome/free-regular-svg-icons": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@types/node": "^12.20.16",
+    "aos": "^2.3.4",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "typescript": "~4.2.3",

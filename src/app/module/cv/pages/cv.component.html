@@ -6,7 +6,7 @@
 
 
 
-    <mat-card class="mat-card-profile"> 
+    <mat-card class="mat-card-profile" data-aos="fade-right"> 
         <div class="profile-container">
             <div class="profile-item">
                 <img class="profile-img" src="../../../../assets/profile-image.jpeg" alt="" />
@@ -24,17 +24,17 @@
     </mat-card>
 
     <div class="container-skills-bar">
-        <div class="app-skills-bar">
+        <div class="app-skills-bar" data-aos="fade-right">
             <app-skills-bar [skillData]="skillData.frontSkills"></app-skills-bar>
         </div>
 
-        <div class="app-skills-bar">
+        <div class="app-skills-bar" data-aos="fade-left">
             <app-skills-bar [skillData]="skillData.backSkills"></app-skills-bar>
         </div>
     </div>
 
 
-    <mat-card class="professional-experience-container">
+    <mat-card class="professional-experience-container" data-aos="zoom-in-up" >
         <mat-card-title>Expérience professionnelle</mat-card-title>
         <mat-card-subtitle>Developpeur Web chez SAAS PARTNER | 2019-2021</mat-card-subtitle>
         <mat-card-content>
@@ -56,7 +56,7 @@
     <mat-card class="mat-card-vertical-timeline">
         <mat-card-title>Formations</mat-card-title>
 
-        <div class="vertical-timeline">
+        <div class="vertical-timeline" data-aos="flip-up">
             <vertical-timeline></vertical-timeline>
 
         </div>
