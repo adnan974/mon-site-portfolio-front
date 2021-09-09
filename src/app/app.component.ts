@@ -23,15 +23,13 @@ export class AppComponent implements OnInit{
   public title = 'mon-site-web-portfolio';
   
 
-  constructor(private _snackBar:MatSnackBar){}
+  constructor(){}
 
   ngOnInit(){
     AOS.init({
       delay: 300,
     });
 
-    //TODO
-    this._snackBar.open("Attention: Le site est en cours de construction. Mais les parties CV et Projet sont fonctionnelles !", "ok");
   }
 
   scrollToElement(element:any){
